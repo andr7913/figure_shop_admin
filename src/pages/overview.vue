@@ -51,7 +51,6 @@
             </tr>
         </table>
         <div class="clearfix"></div>
-
     </main>
 </template>
 

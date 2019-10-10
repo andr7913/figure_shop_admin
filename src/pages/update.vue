@@ -41,7 +41,8 @@
                     <span>Edit the pathImages</span>
                 </li>
                 <li>
-                    <input type="button" value="Send This" @click="updateActionFigures">
+
+                    <input type="submit" value="Send This" @click="updateActionFigures">
                 </li>
             </ul>
         </form>
@@ -83,21 +84,21 @@
                         this.weight= figure.weight;
                         this.material= figure.material;
                         this.color= figure.color;
-                        this.pathImages= this.id;
+                        this.pathImages= this.name;
 
                     });
             },
             updateActionFigures() {
 
                 axios.put('https://actionfigureshop.azurewebsites.net/api/ActionFigure/'+ this.id, {
-
-                    "name" : this.name,
-                    "price": this.price,
-                    "size": this.size,
-                    "weight": this.weight,
-                    "material": this.material,
-                    "color": this.color,
-                    "pathImages": this.pathImages
+                    id:this.id,
+                    name : this.name,
+                    price: this.price,
+                    size: this.size,
+                    weight: this.weight,
+                    material: this.material,
+                    color: this.color,
+                    pathImages: this.pathImages
                 })
 
             }
