@@ -37,7 +37,7 @@
                     <p>{{actionFigure.material}}</p>
                 </td>
                 <td>
-                    <img src="#">
+                    <img v-bind:src="actionFigure.pathImage" alt="" style="width: 150px; height: 150px;">
                 </td>
                 <td class="update">
 

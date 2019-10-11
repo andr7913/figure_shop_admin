@@ -84,7 +84,7 @@
                         this.weight= figure.weight;
                         this.material= figure.material;
                         this.color= figure.color;
-                        this.pathImages= this.name;
+                        this.pathImages= figure.pathImages;
 
                     });
             },
