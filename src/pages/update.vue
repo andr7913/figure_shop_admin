@@ -36,9 +36,9 @@
                     <span>Edit the color</span>
                 </li>
                 <li>
-                    <label for="pathImages">type the new pathImages</label>
-                    <input v-model="pathImages" lable="pathImages" required type="text" name="pathImages">
-                    <span>Edit the pathImages</span>
+                    <label for="pathImage">type the new pathImage</label>
+                    <input v-model="pathImage" lable="pathImage" required type="text" name="pathImage">
+                    <span>Edit the pathImage</span>
                 </li>
                 <li>
 
@@ -67,7 +67,7 @@
                 weight: '',
                 material: '',
                 color: '',
-                pathImages: '',
+                pathImage: '',
                 id: this.$route.params.id
             }
         },
@@ -84,7 +84,7 @@
                         this.weight= figure.weight;
                         this.material= figure.material;
                         this.color= figure.color;
-                        this.pathImages= figure.pathImages;
+                        this.pathImage= figure.pathImage;
 
                     });
             },
@@ -98,7 +98,7 @@
                     weight: this.weight,
                     material: this.material,
                     color: this.color,
-                    pathImages: this.pathImages
+                    pathImage: this.pathImage
                 })
 
             }
